@@ -8,6 +8,20 @@ O resultado esperado é um agente funcional que recebe pedidos de suporte em lin
 
 ---
 
+## Por Onde Começar?
+
+Antes de abrir o Foundry, sugerimos que a equipa dedique os **primeiros 15-20 minutos** a planear:
+
+1. **Definir o scope do agente** — Não tentem replicar os 9 agentes do Copilot Studio. Comecem com o fluxo principal: receber pedido → classificar → triagem → criar ticket.
+2. **Escrever o system prompt primeiro** — O prompt é o cérebro do agente. Rascunhem-no em conjunto antes de tocar no Foundry. Vejam a sugestão detalhada mais abaixo.
+3. **Testar o fluxo conversacional sem MCP** — Configurem o agente com o system prompt e testem se classifica bem e faz as perguntas certas, mesmo sem criar tickets reais. Isto pode avançar enquanto o Eixo 2 prepara o MCP Server.
+4. **Coordenar com o Eixo 2** — Peçam-lhes o URL do MCP Server e o schema das tools o mais cedo possível. Se ainda não estiver pronto, usem respostas simuladas.
+5. **Preparar a comparação desde o início** — Anotem tempos, dificuldades e impressões à medida que avançam. Será valioso para a tabela comparativa com Copilot Studio.
+
+> 💡 **Lembrem-se:** O agente proposto aqui é uma base. Podem e devem **expandir** — adicionem **novos agentes especializados** (ex: um agente de FAQ que responde a perguntas frequentes sem criar ticket), **novas capacidades** (ex: consultar o estado de tickets existentes), ou experimentem **orquestração multi-agente** no Foundry. Se o Eixo 2 adicionar novos MCP tools, o vosso agente pode consumi-los imediatamente!
+
+---
+
 ## O que é o Microsoft Foundry?
 
 O **Microsoft Foundry** é a plataforma unificada da Microsoft para construir aplicações e agentes de IA. Ao contrário do Copilot Studio (low-code, orientado a citizen developers), o Foundry oferece:

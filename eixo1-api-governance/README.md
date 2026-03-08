@@ -8,6 +8,20 @@ O resultado esperado é que todas as chamadas do agente ao Azure DevOps passem p
 
 ---
 
+## Por Onde Começar?
+
+Antes de mergulhar na implementação, sugerimos que a equipa dedique os **primeiros 15-20 minutos** a planear a abordagem:
+
+1. **Fazer um inventário das APIs** — Listem todas as operações que o agente ServiceDesk já usa (Azure DevOps + O365). Decidam quais são prioritárias para governar primeiro.
+2. **Escolher a primeira API** — Recomendamos começar pela operação `criar work item`, pois é a mais usada e a mais visível na demo.
+3. **Definir as políticas mínimas** — Que políticas são essenciais para o dia? (sugestão: rate limiting + logging). Podem sempre adicionar mais depois.
+4. **Esboçar a arquitetura** — Desenhem num whiteboard o fluxo: Agente → APIM → Azure DevOps. Isto ajuda toda a equipa a ter o mesmo mapa mental.
+5. **Dividir tarefas** — Uma pessoa pode trabalhar nas OpenAPI specs enquanto outra configura o APIM.
+
+> 💡 **Lembrem-se:** O que está neste guia é um ponto de partida. Sintam-se à vontade para **adicionar novas APIs** ao catálogo (ex: APIs internas da organização), **criar políticas extra** (ex: caching, transformações), ou **integrar outras fontes** que façam sentido. O hackathon é vosso — sejam criativos!
+
+---
+
 ## Contexto
 
 Atualmente, o agente ServiceDesk chama diretamente as APIs do Azure DevOps para:

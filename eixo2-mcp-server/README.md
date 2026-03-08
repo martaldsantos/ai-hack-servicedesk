@@ -8,6 +8,20 @@ O resultado esperado é um **MCP Server de ServiceDesk** reutilizável, acessív
 
 ---
 
+## Por Onde Começar?
+
+Antes de começar a implementar, sugerimos que a equipa dedique os **primeiros 15-20 minutos** a planear:
+
+1. **Compreender o protocolo MCP** — Se a equipa não está familiarizada, leiam a secção "O que é o MCP?" abaixo e explorem o [MCP Inspector](https://github.com/modelcontextprotocol/inspector) para verem um exemplo real.
+2. **Escolher a primeira tool** — Comecem pela `create_ticket`. É a operação mais importante e a que vai ser usada na demo final.
+3. **Definir o contrato cedo** — Partilhem com o Eixo 3 o schema da tool e o URL do endpoint assim que possível, mesmo que ainda não esteja funcional. Isto desbloqueia o trabalho deles.
+4. **Decidir a abordagem de configuração** — Vão usar o portal do APIM (visual) ou configuração via código/CLI? Ambas funcionam.
+5. **Testar incrementalmente** — Não esperem ter as 4 tools para testar. Publiquem a primeira e validem o fluxo completo.
+
+> 💡 **Lembrem-se:** As 4 tools propostas são um ponto de partida. Podem e devem **adicionar novos MCP tools** que façam sentido — por exemplo, `list_areas` (retorna as 9 áreas operacionais), `get_sla_info` (retorna os SLAs por prioridade), ou até tools para **outros sistemas** da organização. Quanto mais tools o MCP Server tiver, mais capaz será qualquer agente que o consuma!
+
+---
+
 ## O que é o MCP?
 
 O **Model Context Protocol (MCP)** é um protocolo aberto que padroniza a forma como agentes de IA descobrem e utilizam ferramentas externas. Em vez de cada agente ter integrações custom, o MCP define um contrato universal:
