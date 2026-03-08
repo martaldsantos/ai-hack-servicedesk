@@ -1,0 +1,12 @@
+# Ignore source PDF (contains personal data)
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS
+Thumbs.db
+.DS_Store
