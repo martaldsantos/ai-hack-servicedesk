@@ -1,4 +1,6 @@
-# 🚀 A(P)I Hackathon — ServiceDesk AI
+<img width="4400" height="687" alt="banner (1)" src="https://github.com/user-attachments/assets/752cbf76-f3f9-4675-b8b3-786afb96bd27" />
+
+# A(P)I Hackathon — ServiceDesk AI
 
 **1-Day Hackathon | 9h–16h**
 
